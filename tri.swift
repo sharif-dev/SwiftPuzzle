@@ -141,9 +141,6 @@ func is_not_equal(_ p1: Prefix, _ p2: Prefix)->Bool{
 func main(){
     var answers : [Prefix] = []
     let trie = Trie()
-
-    // let my_input: String = "LOL HANIF CD GO NOOB"
-    // Reading Query
     let my_input: String? = readLine()
     let my_input_arr: [String] = my_input!.split(separator: " ").map({ (substring) in return String(substring)})
     for word in my_input_arr{
